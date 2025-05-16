@@ -61,11 +61,24 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="section-padding bg-gray-50">
+    <section id="services" className="section-padding relative overflow-hidden">
+      {/* Background patterns and shapes */}
+      <div className="absolute inset-0 bg-gray-50/70 -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-white to-transparent -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-white to-transparent -z-10"></div>
+      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-techblue-100/30 blur-3xl -z-10"></div>
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-tealteal-100/30 blur-3xl -z-10"></div>
+      
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Premium Tech Services</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <div className="flex justify-center mb-3">
+            <span className="inline-flex items-center px-3 py-1 text-xs font-medium bg-gradient-to-r from-techblue-500/10 to-tealteal-500/10 text-techblue-700 rounded-full">
+              Our Expertise
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Our Premium Tech Services</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-techblue-500 to-tealteal-500 mx-auto mb-6"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             We deliver cutting-edge solutions tailored to meet the unique demands of your business, 
             helping you stay ahead in today's digital landscape.
           </p>

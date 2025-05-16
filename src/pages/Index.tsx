@@ -9,8 +9,37 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 const Index = () => {
+  // Enhanced scroll animation logic
+  useEffect(() => {
+    // Initial animation for elements in viewport
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      elements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementPosition < windowHeight - 100) {
+          element.classList.add('is-visible');
+        }
+      });
+    };
+
+    // Animate elements visible on load with a slight delay for better UX
+    setTimeout(() => {
+      animateOnScroll();
+    }, 100);
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', animateOnScroll);
+    
+    // Cleanup
+    return () => {
+      window.removeEventListener('scroll', animateOnScroll);
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-hidden">
       <Navigation />
       <Hero />
       <Services />
