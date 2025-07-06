@@ -4,12 +4,6 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-// import {
-//   DropdownMenu,
-//   DropdownMenuContent,
-//   DropdownMenuItem,
-//   DropdownMenuTrigger,
-// } from "@/components/ui/dropdown-menu"
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,7 +65,7 @@ const Navigation = () => {
                  Testimonial
                 </a>
                 <a href="#about" className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-black dark:after:bg-white hover:after:w-full after:transition-all after:duration-300">
-                  About
+                  About us
                 </a>
               </>
             ) : (
@@ -104,24 +98,6 @@ const Navigation = () => {
           <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           <span className="sr-only">Toggle theme</span>
         </Button>
-
-        {/* <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="icon">
-              <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
-              <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem onClick={() => setTheme("light")}>
-              Light
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme("dark")}>
-              Dark
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu> */}
 
         {/* Mobile Menu Button */}
         <button
@@ -174,14 +150,14 @@ const Navigation = () => {
                   className="block text-gray-700 dark:text-gray-300 font-medium hover:text-black dark:hover:text-white transition-colors py-3 px-2 border-b border-gray-100 dark:border-gray-800"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Case Studies
+                  Testimonial
                 </a>
                 <a
                   href="#about"
                   className="block text-gray-700 dark:text-gray-300 font-medium hover:text-black dark:hover:text-white transition-colors py-3 px-2 border-b border-gray-100 dark:border-gray-800"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  About
+                  About us
                 </a>
               </>
             ) : (

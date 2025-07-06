@@ -11,7 +11,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, link }) => {
   return (
     <div className="group relative bg-white dark:bg-black rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-black dark:hover:border-white">
-      Background decoration
+      {/* Background decoration */}
       {/* <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-gradient-to-br from-black/10 to-gray-600/10 dark:from-white/10 dark:to-gray-400/10 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div> */}
       
       {/* Icon */}

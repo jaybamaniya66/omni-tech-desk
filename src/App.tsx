@@ -7,7 +7,7 @@ import Index from "./components/pages/Index";
 // import NotFound from "./pages/NotFound";
 import NotFound from "./components/pages/NotFound"
 import DevOpsPage from "./components/pages/services/DevOpsPage";
-import AiAgents from "./components/pages/services/AIAgents";
+import AIAgents from "./components/pages/services/AIAgents";
 import CloudInfrastructure from "./components/pages/services/CloudInfrastructure";
 import FullStackDevelopment from "./components/pages/services/FullStackDevelopment";
 import WebDevelopment from "./components/pages/services/WebDevelopment";
@@ -29,7 +29,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           {/* Service Routes */}
           <Route path="/services/devops" element={<DevOpsPage/>} />
-          <Route path="/services/ai-agents" element={<AiAgents/>} />
+          <Route path="/services/ai-agents" element={<AIAgents/>} />
           <Route path="/services/cloud-infrastructure" element={<CloudInfrastructure />} />
           <Route path="/services/full-stack-development" element={<FullStackDevelopment />} />
           <Route path="/services/web-development" element={<WebDevelopment />} />
