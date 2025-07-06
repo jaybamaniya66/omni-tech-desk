@@ -1,9 +1,14 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
+<<<<<<< HEAD
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
 
@@ -31,10 +36,40 @@
     --border: 0 0% 90%;
     --input: 0 0% 90%;
     --ring: 0 0% 0%;
+=======
+    --background: 220 33% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222 84% 4.9%;
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
+<<<<<<< HEAD
     --sidebar-foreground: 0 0% 20%;
     --sidebar-primary: 0 0% 0%;
     --sidebar-primary-foreground: 0 0% 100%;
@@ -81,6 +116,54 @@
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 15%;
     --sidebar-ring: 0 0% 100%;
+=======
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 222 47% 11%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+    --ring: 212.7 26.8% 83.9%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
   }
 }
 
@@ -96,6 +179,7 @@
   
   /* Custom section styles */
   .section-padding {
+<<<<<<< HEAD
     @apply py-12 md:py-14 px-4;
   }
   
@@ -109,6 +193,21 @@
   
   .tech-card {
     @apply bg-white dark:bg-black rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl;
+=======
+    @apply py-20 md:py-28 px-4;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-techblue-600 to-tealteal-600 text-transparent bg-clip-text;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br from-techblue-900 to-tealteal-900;
+  }
+  
+  .tech-card {
+    @apply bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl;
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
   }
   
   .tech-button {
@@ -116,11 +215,19 @@
   }
   
   .primary-button {
+<<<<<<< HEAD
     @apply tech-button bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 shadow-lg hover:shadow-xl shadow-black/20 dark:shadow-white/20 hover:shadow-black/30 dark:hover:shadow-white/30;
   }
   
   .secondary-button {
     @apply tech-button bg-white dark:bg-black text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl;
+=======
+    @apply tech-button bg-techorange-500 text-white hover:bg-techorange-600 shadow-lg hover:shadow-xl shadow-techorange-400/20 hover:shadow-techorange-400/30;
+  }
+  
+  .secondary-button {
+    @apply tech-button bg-white text-techblue-800 hover:bg-gray-50 border border-gray-200 shadow-lg hover:shadow-xl;
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
   }
   
   .animate-on-scroll {
@@ -139,7 +246,11 @@ html {
 
 /* Glass morphism effect */
 .glass-card {
+<<<<<<< HEAD
   @apply bg-white dark:bg-black bg-opacity-30 dark:bg-opacity-30 backdrop-filter backdrop-blur-lg border border-white dark:border-black border-opacity-30 dark:border-opacity-30 shadow-lg;
+=======
+  @apply bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg border border-white border-opacity-30 shadow-lg;
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
 }
 
 /* Enhanced animations */
@@ -201,6 +312,7 @@ html {
 }
 
 .hover-glow:hover {
+<<<<<<< HEAD
   @apply shadow-lg shadow-black/20;
 }
 
@@ -221,3 +333,7 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+=======
+  box-shadow: 0 0 15px rgba(0, 135, 255, 0.2);
+}
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e

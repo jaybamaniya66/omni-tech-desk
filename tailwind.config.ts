@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,6 +67,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				techblue: {
+<<<<<<< HEAD
 					50: '#fafafa',
 					100: '#f5f5f5',
 					200: '#e5e5e5',
@@ -97,6 +102,42 @@ export default {
 					700: '#404040',
 					800: '#262626',
 					900: '#171717',
+=======
+					50: '#E6F3FF',
+					100: '#CCE7FF',
+					200: '#99CFFF',
+					300: '#66B7FF',
+					400: '#339FFF',
+					500: '#0087FF',
+					600: '#006CCC',
+					700: '#005199',
+					800: '#003666',
+					900: '#001B33',
+				},
+				tealteal: {
+					50: '#E6FFFA',
+					100: '#B2F5EA',
+					200: '#81E6D9',
+					300: '#4FD1C5',
+					400: '#38B2AC',
+					500: '#319795',
+					600: '#2C7A7B',
+					700: '#285E61',
+					800: '#234E52',
+					900: '#1D4044',
+				},
+				techorange: {
+					50: '#FFF7ED',
+					100: '#FFEDD5',
+					200: '#FED7AA',
+					300: '#FDBA74',
+					400: '#FB923C',
+					500: '#F97316',
+					600: '#EA580C',
+					700: '#C2410C',
+					800: '#9A3412',
+					900: '#7C2D12',
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
 				},
 			},
 			borderRadius: {
@@ -138,6 +179,7 @@ export default {
 					'50%': {
 						transform: 'translateY(-5px)'
 					}
+<<<<<<< HEAD
 				},
 				'scroll': {
 					'0%': {
@@ -146,14 +188,20 @@ export default {
 					'100%': {
 						transform: 'translateX(-50%)'
 					}
+=======
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in-up': 'fade-in-up 0.5s ease-out',
+<<<<<<< HEAD
 				'float': 'float 3s ease-in-out infinite',
 				'scroll': 'scroll 25s linear infinite'
+=======
+				'float': 'float 3s ease-in-out infinite'
+>>>>>>> 6fd5b80e8841fdec3a375a89df6592c4ab24849e
 			}
 		}
 	},
